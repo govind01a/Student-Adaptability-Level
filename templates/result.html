@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Students Adaptibilty Level - Results</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="static/img/SAP-icon.png" rel="icon">
+    <link href="static/img/SAP-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="static/vendor/aos/aos.css" rel="stylesheet">
+    <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="static/vendor/remixicon/remixicon.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="static/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Nova
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="page-services">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="static/img/logo.png" alt=""> -->
+                <h1 class="d-flex align-items-center">SAP</h1>
+            </a>
+
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <div class="breadcrumbs d-flex align-items-center"
+            style="background-image: url('static/img/services-header.jpg');">
+            <div class="container position-relative d-flex flex-column align-items-center">
+
+                <h2>Result</h2>
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Result</li>
+                </ol>
+
+            </div>
+        </div><!-- End Breadcrumbs -->
+        <br><br>
+        <style>
+          #inputs {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 60%;
+            position: relative;
+            left: 20%;
+            text-align: center;
+          }
+          
+          #inputs td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+          }
+          
+          #inputs tr:nth-child(even){background-color: #f2f2f2;}
+          
+          #inputs tr:hover {background-color: #ddd;}
+          
+          #inputs th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #44b9ec;
+            color: white;
+          }
+          </style>
+
+        <div id="data">
+          <table id="inputs">
+            <tr>
+              <th>Feature</th>
+              <th>Uer Input</th>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              <td id="v1">{{gender}}</td>
+            </tr>
+            <tr>
+              <td>Age</td>
+              <td id="v2">{{age}}</td>
+            </tr>
+            <tr>
+              <td>Education</td>
+              <td id="v3">{{education}}</td>
+            </tr>
+            <tr>
+              <td>Institution</td>
+              <td id="v4">{{institution}}</td>
+            </tr>
+            <tr>
+              <td>IT Student</td>
+              <td id="v5">{{IT_student}}</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td id="v6">{{location}}</td>
+            </tr>
+            <tr>
+              <td>Load-shedding</td>
+              <td id="v7">{{load_shedding}}</td>
+            </tr>
+            <tr>
+              <td>Financial Condition</td>
+              <td id="v8">{{financial_condition}}</td>
+            </tr>
+            <tr>
+              <td>Internet Type</td>
+              <td id="v9">{{internet}}</td>
+            </tr>
+            <tr>
+              <td>Network Type</td>
+              <td id="v10">{{network_type}}</td>
+            </tr>
+            <tr>
+              <td>Class Duration</td>
+              <td id="v11">{{class_duration}}</td>
+            </tr>
+            <tr>
+              <td>Self Lms</td>
+              <td id="v12">{{self_lms}}</td>
+            </tr>
+            <tr>
+              <td>Device</td>
+              <td id="v13">{{device}}</td>
+            </tr>
+          </table>
+        </div>
+
+<!-- <script>
+    var queryDict = {}
+location.search.substr(1).split("&").forEach(function(item) {
+    queryDict[item.split("=")[0]] = item.split("=")[1]
+})
+console.log(queryDict);
+    document.getElementById("v1").innerHTML=queryDict["gender"]
+    document.getElementById("v2").innerHTML=queryDict["age"]
+    document.getElementById("v3").innerHTML=queryDict["Education"]
+    document.getElementById("v4").innerHTML=queryDict["Institution"]
+    document.getElementById("v5").innerHTML=queryDict["IT+Student"]
+    document.getElementById("v6").innerHTML=queryDict["Location"]
+    document.getElementById("v7").innerHTML=queryDict["Load-shedding"]
+    document.getElementById("v8").innerHTML=queryDict["Financial+Condition"]
+    document.getElementById("v9").innerHTML=queryDict["Internet+Type"]
+    document.getElementById("v10").innerHTML=queryDict["Network+Type"]
+    document.getElementById("v11").innerHTML=queryDict["Class+Duration"]
+    document.getElementById("v12").innerHTML=queryDict["Self+Lms"]
+    document.getElementById("v13").innerHTML=queryDict["Device"]
+</script> -->
+
+<!-- ======= Our Services Section ======= -->
+<section id="services-list" class="services-list">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Results</h2>
+      </div>
+      <div><p><p id="res"><p id="student-info"><script>
+        var y= '{{y}}';
+        if(y==0)
+        {
+          output = "High";
+        }
+        else if(y==1)
+        {
+          output = "Low";
+        }
+        else{
+          output = "Moderate";
+        }
+        document.getElementById("res").innerHTML="Student's adaptibility level is: "+output;
+      </script></p></p></p></div>
+      <br>
+      <div class="section-header">
+        <h2>Findings</h2>
+      </div>
+      <div class="row gy-5">
+        
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">Findings 1</a></h4>
+            <p class="description" id="f1"></p>
+            <script>
+              recommendations=[
+                  "Lack of prior knowledge or experience. Students who are new to a subject or who have not had much experience with online learning may find it more difficult to adapt to a new learning environment.",//Low
+                  "The student is able to learn independently, but may need some guidance on how to access resources or complete assignments.",//Moderate
+                  "The student is able to use technology effectively and troubleshoot technical difficulties."//High
+              ]
+              if(y==0)
+              {
+                document.getElementById("f1").innerHTML=recommendations[2]
+              }
+              else if(y==1)
+              {
+                document.getElementById("f1").innerHTML=recommendations[0]
+              }
+              else{
+                document.getElementById("f1").innerHTML=recommendations[1]
+              }
+            </script>
+          </div>
+        </div>
+        <!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">Findings 2</a></h4>
+            <p class="description" id="f2"></p>
+            <script>
+              recommendations=[
+                  "Poor time management skills. Students who struggle to manage their time effectively may find it difficult to keep up with the demands of online learning.",//Low
+                  "The student is able to manage their time effectively, but may need some help setting goals or breaking down tasks.",//Moderate
+                  "The student is able to manage their time effectively and stay on track."//High
+              ]
+              if(y==0)
+              {
+                document.getElementById("f2").innerHTML=recommendations[2]
+              }
+              else if(y==1)
+              {
+                document.getElementById("f2").innerHTML=recommendations[0]
+              }
+              else{
+                document.getElementById("f2").innerHTML=recommendations[1]
+              }
+            </script>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">Findings 3</a></h4>
+            <p class="description" id="f3"></p>
+            <script>
+              recommendations=[
+                  "Personal factors. Students who are dealing with personal challenges, such as family or financial problems, may also have a hard time adapting to online learning.",//Low
+                  "The student is able to use technology effectively, but may need some help troubleshooting technical difficulties.",//Moderate
+                  "The student is able to learn in different ways and is not afraid to try new things."//High
+              ]
+              if(y==0)
+              {
+                document.getElementById("f3").innerHTML=recommendations[2]
+              }
+              else if(y==1)
+              {
+                document.getElementById("f3").innerHTML=recommendations[0]
+              }
+              else{
+                document.getElementById("f3").innerHTML=recommendations[1]
+              }
+            </script>
+          </div>
+        </div><!-- End Service Item -->
+
+      </div>
+
+    </div>
+  </section><!-- End Our Services Section -->   
+
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+      <h2>Recommendations</h2>
+
+    </div>
+
+    <section id="services-list" class="services-list">
+    <div class="row gy-1">
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
+        <div>
+          <p class="description" id="result"></p>
+          <script>
+            recommendations=[
+                "For individuals with low adaptability levels in online education, it is recommended to focus on developing time management skills, seeking peer support through online forums or study groups, utilizing educational technology tools for personalized learning, and engaging in regular communication with instructors to address challenges promptly.",//Low
+                "For individuals with a moderate adaptability level, it is recommended to focus on building a structured study routine, actively engaging in online discussions, seeking additional support through online forums or tutoring, and exploring adaptive learning platforms. Emphasize self-motivation and time management skills to enhance online education experience.",//Moderate
+                "For individuals with a high adaptability level in online education, it is recommended to actively engage in collaborative discussions, explore diverse learning resources, participate in online communities, set clear goals, practice time management, and seek continuous self-improvement through reflective practices and feedback."//High
+            ]
+            if(y==0)
+            {
+              document.getElementById("result").innerHTML=recommendations[2]
+            }
+            else if(y==1)
+            {
+              document.getElementById("result").innerHTML=recommendations[0]
+            }
+            else{
+              document.getElementById("result").innerHTML=recommendations[1]
+            }
+          </script>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
+        <div>
+          <p class="description" id="result1"></p>
+          <script>
+            recommendations=[
+                "Encourage student participation. Students who are actively involved in their learning are more likely to be successful.",//Low
+                "Offer self-paced learning options. This allows students to learn at their own pace and to focus on the areas where they need the most help.",//Moderate
+                "Encourage students to take on leadership roles. This allows students to use their skills and talents to help others."//High
+            ]
+            if(y==0)
+            {
+              document.getElementById("result1").innerHTML=recommendations[2]
+            }
+            else if(y==1)
+            {
+              document.getElementById("result1").innerHTML=recommendations[0]
+            }
+            else{
+              document.getElementById("result1").innerHTML=recommendations[1]
+            }
+          </script>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
+        <div>
+          <p class="description" id="result2"></p>
+          <script>
+            recommendations=[
+                "Be patient and understanding. Adapting to a new learning environment takes time and effort. Be patient with students who are struggling to adapt.",//Low
+                "Provide flexible deadlines. This allows students to manage their time effectively and to avoid feeling overwhelmed.",//Moderate
+                "Provide opportunities for students to work on real-world projects. This gives students the opportunity to apply their skills in a practical setting."//High
+            ]
+            if(y==0)
+            {
+              document.getElementById("result2").innerHTML=recommendations[2]
+            }
+            else if(y==1)
+            {
+              document.getElementById("result2").innerHTML=recommendations[0]
+            }
+            else{
+              document.getElementById("result2").innerHTML=recommendations[1]
+            }
+          </script>
+        </div>
+      </div>
+      <!-- End Service Item -->
+      </div>
+    </section>
+    </main>
+
+    <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>SAP</span>
+            </a>
+            <p>The best place for gaining data driven insights regarding a students adaptibilty level in online education.</p>
+            <div class="social-links d-flex  mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-dash"></i> <a href="index.html">Home</a></li>
+              <li><i class="bi bi-dash"></i> <a href="about.html">About us</a></li>
+              <li><i class="bi bi-dash"></i> <a href="services.html">Services</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-dash"></i> <a href="services.html">Adaptability Assessment</a></li>
+              <li><i class="bi bi-dash"></i> <a href="services.html">Personalized  Learning Paths</Param></a></li>
+              <li><i class="bi bi-dash"></i> <a href="services.html">Educational Insights</a></li>
+              <li><i class="bi bi-dash"></i> <a href="contact.html">Feedback and Support</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              VIT Chennai Vandalur-Kelambakkam Road <br>
+              CHennai, Tamil Nadu 600127<br>
+              India <br><br>
+              <strong>Phone:</strong> +91 xxxxxxxxxx<br>
+              <strong>Email:</strong> placeholder@example.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer --><!-- End Footer -->
+
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="static/vendor/aos/aos.js"></script>
+    <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="static/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>
